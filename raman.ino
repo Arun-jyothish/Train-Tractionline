@@ -21,9 +21,11 @@ int Intensity_light =analogRead(ldr_pin);
 int pwm = map(Input_value,0,1023,255,0);
 analogWrite(9,pwm);
 if (Intensity_light > threshold){
-    digitalWrite(contactor_A,HIGH);
-}
+    digitalWrite(contactor_B,LOW);
+      digitalWrite(contactor_A,HIGH);
+    }
 else
+digitalWrite(contactor_A,LOW);
 digitalWrite(contactor_B,HIGH);
     
 }
