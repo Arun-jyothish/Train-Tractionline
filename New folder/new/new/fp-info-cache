@@ -1,4 +1,4 @@
-19080928548729994
+19087363395219829
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76761,6 +76761,34 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Socket_Arduino_Uno
+Arduino_1pin
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x06
+Through hole socket strip
+socket strip
+0
+6
+6
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x08
+Through hole socket strip
+socket strip
+0
+8
+8
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x10
+Through hole socket strip
+socket strip
+0
+10
+10
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking

@@ -1,0 +1,10 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ 0 10uf
+V1 Net-_R3-Pad1_ 0 10V
+L1 Net-_C1-Pad1_ 0 1m
+Q1 Net-_Q1-Pad1_ Net-_Q1-Pad2_ 0 NC_01 2N2060
+I1 Net-_I1-Pad1_ 0 10ma
+R2 Net-_Q1-Pad2_ Net-_C1-Pad1_ 1K
+R3 Net-_R3-Pad1_ Net-_Q1-Pad1_ 150R
+R1 Net-_C1-Pad1_ Net-_I1-Pad1_ 1K
+.end

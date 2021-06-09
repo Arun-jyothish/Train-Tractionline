@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 60E292CD
+P 6600 1700
+F 0 "V1" H 6828 1746 50  0000 L CNN
+F 1 "30" H 6828 1655 50  0000 L CNN
+F 2 "" H 6600 1700 50  0001 C CNN
+F 3 "~" H 6600 1700 50  0001 C CNN
+	1    6600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R2
+U 1 1 60E2A541
+P 4600 1900
+F 0 "R2" V 4395 1900 50  0000 C CNN
+F 1 "1K" V 4486 1900 50  0000 C CNN
+F 2 "" H 4600 1900 50  0001 C CNN
+F 3 "~" H 4600 1900 50  0001 C CNN
+	1    4600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 60E2B38C
+P 5650 1150
+F 0 "R3" V 5445 1150 50  0000 C CNN
+F 1 "150" V 5536 1150 50  0000 C CNN
+F 2 "" H 5650 1150 50  0001 C CNN
+F 3 "~" H 5650 1150 50  0001 C CNN
+	1    5650 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 60E2BE99
+P 2900 1750
+F 0 "R1" V 2695 1750 50  0000 C CNN
+F 1 "1K" V 2786 1750 50  0000 C CNN
+F 2 "" H 2900 1750 50  0001 C CNN
+F 3 "~" H 2900 1750 50  0001 C CNN
+	1    2900 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 60E2F129
+P 1500 2750
+F 0 "#GND01" H 1500 2650 50  0001 C CNN
+F 1 "0" H 1500 2839 50  0000 C CNN
+F 2 "" H 1500 2750 50  0001 C CNN
+F 3 "~" H 1500 2750 50  0001 C CNN
+	1    1500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND04
+U 1 1 60E2F89E
+P 5400 2600
+F 0 "#GND04" H 5400 2500 50  0001 C CNN
+F 1 "0" H 5400 2689 50  0000 C CNN
+F 2 "" H 5400 2600 50  0001 C CNN
+F 3 "~" H 5400 2600 50  0001 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND05
+U 1 1 60E2FB94
+P 6600 2550
+F 0 "#GND05" H 6600 2450 50  0001 C CNN
+F 1 "0" H 6600 2639 50  0000 C CNN
+F 2 "" H 6600 2550 50  0001 C CNN
+F 3 "~" H 6600 2550 50  0001 C CNN
+	1    6600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1400 6600 1150
+Wire Wire Line
+	6600 1150 5900 1150
+Wire Wire Line
+	6600 2550 6600 2000
+Wire Wire Line
+	4950 1900 4850 1900
+Wire Wire Line
+	3150 1750 3150 1900
+Wire Wire Line
+	1500 2350 1500 2750
+Wire Wire Line
+	5400 2600 5400 2250
+Wire Wire Line
+	5400 1150 5400 1550
+Wire Wire Line
+	1500 1750 2650 1750
+$Comp
+L pspice:QNPN Q1
+U 1 1 60BCBEAC
+P 5250 1900
+F 0 "Q1" H 5477 1946 50  0000 L CNN
+F 1 "QNPN" H 5477 1855 50  0000 L CNN
+F 2 "" H 5250 1900 50  0001 C CNN
+F 3 "~" H 5250 1900 50  0001 C CNN
+F 4 "Q" H 5250 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "Q2N2906" H 5250 1900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "C:\\Cadence\\SPB_17.2\\tools\\pspice\\library\\bipolar.lib" H 5250 1900 50  0001 C CNN "Spice_Lib_File"
+	1    5250 1900
+	1    0    0    -1  
+$EndComp
+Text Notes 2600 1150 0    50   ~ 0
+\n\n*.tran 4n\n\n
+Text Label 5400 1450 0    50   ~ 0
+output_c
+Text Label 1850 1750 0    50   ~ 0
+input_b
+Text Label 6350 1150 0    50   ~ 0
+vcc
+Text Label 4950 1900 0    50   ~ 0
+vbe
+$Comp
+L pspice:VSOURCE V2
+U 1 1 60BE0241
+P 1500 2050
+F 0 "V2" H 1728 2096 50  0000 L CNN
+F 1 "1" H 1728 2005 50  0000 L CNN
+F 2 "" H 1500 2050 50  0001 C CNN
+F 3 "~" H 1500 2050 50  0001 C CNN
+F 4 "V" H 1500 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 ac 1 0" H 1500 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1500 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1900 4350 1900
+$EndSCHEMATC
